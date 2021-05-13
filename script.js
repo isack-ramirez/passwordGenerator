@@ -9,6 +9,68 @@ var useChars = true;
 var useNums = true;
 var useSPchars = true;
 
+var validated=false;
+
+while(validated===false){
+  var usingChars=prompt("Hello! Would you like to use [LETTERS] in your password? Y / N ")
+      if(usingChars==='y' ||usingChars=== 'Y'){
+          usechars=true;
+          validated=true;
+      }
+    else if(usingChars==='n' ||usingChars=== 'N'){
+      useChars=false;
+      validated=true;
+  
+    }
+    else{
+      alert("Invalid input! Please enter the letter Y or N.")
+    }
+  
+  }
+
+validated = false;
+
+while(validated===false){
+
+   var usingNums=prompt("Hello! Would you like to use [NUMBERS] in your password? Y / N ")
+   if(usingNums==='y' ||usingNums=== 'Y'){
+    useNums=true;
+    validated=true;
+}
+else if(usingNums==='n' ||usingNums=== 'N'){
+useNums=false;
+validated=true;
+
+}
+else{
+alert("Invalid input! Please enter the letter Y or N.")
+}
+
+}
+
+validated = false;
+
+while(validated===false){
+
+   var usingSPchars=prompt("Hello! Would you like to use [SPECIAL CHARACTERS (eg % )] in your password? Y / N ")
+   if(usingSPchars==='y' ||usingSPchars=== 'Y'){
+    useSPchars=true;
+    validated=true;
+}
+else if(usingSPchars==='n' ||usingSPchars=== 'N'){
+use=false;
+validated=true;
+
+}
+else{
+alert("Invalid input! Please enter the letter Y or N.")
+}
+
+}
+
+
+
+
 var combinedArrays;
 
 
@@ -63,34 +125,43 @@ function generatePassword(){
           var combinedArrays = charArrary.concat(numArrary,SPcharArray);
       }
 
-      else if(usechars===true && useNums===true && useSPchars===false){
+      else if(useChars===true && useNums===true && useSPchars===false){
         var combinedArrays = charArrary.concat(numArrary);
       }
 
-      else if(usechars===true && useNums===true && useSPchars===false){
+      else if(useChars===true && useNums===true && useSPchars===false){
         var combinedArrays = charArrary.concat(numArrary);
       }
       
-      else if(usechars===true && useNums===false && useSPchars===true){
+      else if(useChars===true && useNums===false && useSPchars===true){
         var combinedArrays = charArrary.concat(SPcharArray);
       } 
 
-      else if(usechars===true && useNums===false && useSPchars===false){
+      else if(useChars===true && useNums===false && useSPchars===false){
         var combinedArrays = charArrary
       } 
 
-      else if(usechars===false && useNums===true && useSPchars===true){
+      else if(useChars===false && useNums===true && useSPchars===true){
         var combinedArrays = numArrary.concat(SPcharArray);
       } 
 
-      else if(usechars===false && useNums===false && useSPchars===true){
+      else if(useChars===false && useNums===false && useSPchars===true){
         var combinedArrays = SPcharArray;
       } 
 
-      else if(usechars===false && useNums===true && useSPchars===false){
+      else if(useChars===false && useNums===true && useSPchars===false){
         var combinedArrays = numArrary;
       } 
 
+      else if(useChars===false && useNums===false && useSPchars===true){
+        var combinedArrays = SPcharArray;
+      } 
+
+      else{
+        combinedArrays=['H',"H","H","A","A","HA"]
+      }
+
+      
 
 
 
@@ -119,3 +190,13 @@ function getRandomItemFromArray(arrayX){
 }
 
 console.log(generatedPassword);
+
+
+
+
+
+    
+
+
+
+
