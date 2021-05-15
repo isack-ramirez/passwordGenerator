@@ -42,8 +42,8 @@ The way user input is validated for the prompts is with a series if while loops,
 
 they are vallidated by a series of if / if else / else statements that check if the user input a value that is vallid with the questions given options, if its not then it throws an alert asking the user to use a valid input, and repeats the loop.
 
-![](prompt1)
-![](prompt2)
+![](prompt1)}
+![](prompt2)}
 ![](prompt3)
 ![](prompt4)
 ![](promptfail1)
