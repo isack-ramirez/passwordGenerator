@@ -46,7 +46,7 @@ they are vallidated by a series of if / if else / else statements that check if 
 ![](prompt2.png)
 ![](prompt3.png)
 ![](prompt4.png)
-![](promptfail1.png)
+![](promtfail1.png)
 ![](promptfail2.png)
 ![](generatedPassword.png)
 
