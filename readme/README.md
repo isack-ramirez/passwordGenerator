@@ -2,6 +2,10 @@
 
 This is a simple, lightweight password generator:
 
+Here is a link to the deployed application
+
+https://isack-ramirez.github.io/passwordGenerator/
+
 Default javascript prompt boxes ask a user a series of questions:
 
     "Do you want to use alphabetic characters?"
@@ -42,13 +46,13 @@ The way user input is validated for the prompts is with a series if while loops,
 
 they are vallidated by a series of if / if else / else statements that check if the user input a value that is vallid with the questions given options, if its not then it throws an alert asking the user to use a valid input, and repeats the loop.
 
-![](prompt1.png)
-![](prompt2.png)
-![](prompt3.png)
-![](prompt4.png)
-![](promtfail1.png)
-![](promptfail2.png)
-![](generatedPassword.png)
+![](./images/prompt1.png)
+![](./images/prompt2.png)
+![](./images/prompt3.png)
+![](./images/prompt4.png)
+![](./images/promtfail1.png)
+![](./images/promptfail2.png)
+![](./images/generatedPassword.png)
 
 
 
